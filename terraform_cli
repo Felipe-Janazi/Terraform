@@ -1,0 +1,31 @@
+terraform -help
+
+IMPORTANTE
+terraform providers = Indica os providers mencionados e que serão utilizados
+
+IMPORTANTE
+terraform init = Usamos quando é a primeira vez, quando mudamos a versão do provider e quando alteramos algo no nosso módulo
+
+terraform fmt = Formatação do código
+terraform fmt - check = Quais arquivos ele faria a modificação
+terraform fmt -diff = Ver as alterações que ele fez no código
+
+IMPORTANTE
+terraform validate = Verificar se a configuração do código é válida
+
+IMPORTANTE
+terraform plan = Mostrar o que o código irá fazer 
+terraform plan -out (nome arquivo) = Para salvar em um arquivo
+terraform plan -out (nome arquivo) -destroy = Para salvar um plano de destroy
+terraform show (nome arquivo) = Para ler este arquivo
+
+IMPORTANTE
+terraform apply = Criação de tudo e depende de uma validação
+terraform apply -auto-approve = Sem precisar de validação, usado em pipelines
+terraform apply (nome arquivo) = Ele vai seguir o que está no plano e não precisa de validação
+
+IMPORTANTE
+terraform apply -destroy = Destroi tudo e depende de validação
+terraform destroy = Destroi tudo e depende de validação
+terraform destroy -auto-approve = Destroi sem precisar de validação
+terraform apply (nome arquivo) = Destroi seguindo um arquivo de destroi
