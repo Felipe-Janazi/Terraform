@@ -7,7 +7,7 @@ IMPORTANTE
 terraform init = Usamos quando é a primeira vez, quando mudamos a versão do provider e quando alteramos algo no nosso módulo
 
 terraform fmt = Formatação do código
-terraform fmt - check = Quais arquivos ele faria a modificação
+terraform fmt -check = Quais arquivos ele faria a modificação
 terraform fmt -diff = Ver as alterações que ele fez no código
 
 IMPORTANTE
