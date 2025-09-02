@@ -29,3 +29,7 @@ terraform apply -destroy = Destroi tudo e depende de validação
 terraform destroy = Destroi tudo e depende de validação
 terraform destroy -auto-approve = Destroi sem precisar de validação
 terraform apply (nome arquivo) = Destroi seguindo um arquivo de destroi
+
+terraform output = Depois do apply podemos ter acesso aos outputs colocando esse comando no terminal
+terraform output -raw (nome output) = Assim temos acesso a somente um dos outputs
+= Podemos acessar também informações com sensitive true dessa forma
