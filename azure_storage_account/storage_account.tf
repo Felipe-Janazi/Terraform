@@ -1,12 +1,12 @@
 resource "azurerm_resource_group" "resource_group" {
-  name     = ""
+  name     = var.resource_group_name
   location = var.location
 
   tags = local.common_tags
 }
 
 resource "azurerm_storage_account" "storage_account" {
-  name = ""
+  name = var.storage_account_name
   # Dessa forma esse campo tem o mesmo nome que o name do resource acima
   resource_group_name      = azurerm_resource_group.resource_group.name
   location                 = var.location
@@ -17,6 +17,6 @@ resource "azurerm_storage_account" "storage_account" {
 }
 
 resource "azurerm_storage_container" "container" {
-  name                 = ""
+  name                 = var.container_name
   storage_account_name = azurerm_storage_account.storage_account.name
 }
